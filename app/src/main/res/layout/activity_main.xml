@@ -5,10 +5,13 @@
     android:layout_height="match_parent"
     android:weightSum="3">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:id="@+id/tv"
 
         android:text="Use this application To test whether you may be depressed and assess the severity of your depression.This is a tentative self-test tool."/>
     />
