@@ -10,54 +10,54 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * Created by bad on 5/19/2017.
+ * Created by bad on 5/20/2017.
  */
 
-class NextQuestions4 extends AppCompatActivity {
-    Button nextbtn,testbtn,resultbtn,infobtn;
+class NextQuestions8 extends AppCompatActivity {
+    Button submitbtn,testbtn,resultbtn,infobtn;
     EditText ans;
     TextView textq;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question5);
+        setContentView(R.layout.question9);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        nextbtn=(Button)(findViewById(R.id.nextbtn));
+        submitbtn=(Button)(findViewById(R.id.submitbtn));
         testbtn=(Button)(findViewById(R.id.testbtn));
         resultbtn=(Button)(findViewById(R.id.resultbtn));
         infobtn=(Button)(findViewById(R.id.infobtn));
         ans=(EditText)findViewById(R.id.ans);
         textq=(TextView)(findViewById(R.id.textq));
-        nextbtn.setOnClickListener(new View.OnClickListener() {
+        submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NextQuestions4.this,NextQuestions5.class);
+                Intent i = new Intent(NextQuestions8.this,ShowResult.class);
                 startActivity(i);
             }
         });
         testbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(NextQuestions4.this,MainActivity.class);
+                Intent i=new Intent(NextQuestions8.this,MainActivity.class);
                 startActivity(i);
             }
         });
         resultbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(NextQuestions4.this,ShowResult.class);
+                Intent i=new Intent(NextQuestions8.this,ShowResult.class);
                 startActivity(i);
             }
         });
         infobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(NextQuestions4.this,Information.class);
+                Intent i=new Intent(NextQuestions8.this,Information.class);
                 startActivity(i);
             }
         });

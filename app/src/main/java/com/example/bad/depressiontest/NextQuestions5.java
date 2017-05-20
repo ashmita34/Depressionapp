@@ -10,10 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * Created by bad on 5/19/2017.
+ * Created by bad on 5/20/2017.
  */
 
-class NextQuestions4 extends AppCompatActivity {
+class NextQuestions5 extends AppCompatActivity {
     Button nextbtn,testbtn,resultbtn,infobtn;
     EditText ans;
     TextView textq;
@@ -21,7 +21,7 @@ class NextQuestions4 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question5);
+        setContentView(R.layout.question6);
     }
 
     @Override
@@ -36,28 +36,28 @@ class NextQuestions4 extends AppCompatActivity {
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NextQuestions4.this,NextQuestions5.class);
+                Intent i = new Intent(NextQuestions5.this,NextQuestions6.class);
                 startActivity(i);
             }
         });
         testbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(NextQuestions4.this,MainActivity.class);
+                Intent i=new Intent(NextQuestions5.this,MainActivity.class);
                 startActivity(i);
             }
         });
         resultbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(NextQuestions4.this,ShowResult.class);
+                Intent i=new Intent(NextQuestions5.this,ShowResult.class);
                 startActivity(i);
             }
         });
         infobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(NextQuestions4.this,Information.class);
+                Intent i=new Intent(NextQuestions5.this,Information.class);
                 startActivity(i);
             }
         });

@@ -22,6 +22,11 @@
         <activity android:name=".Next"></activity>
         <activity android:name=".NextQuestions2"></activity>
         <activity android:name=".NextQuestions3"></activity>
+        <activity android:name=".NextQuestions4"></activity>
+        <activity android:name=".NextQuestions5"></activity>
+        <activity android:name=".NextQuestions6"></activity>
+        <activity android:name=".NextQuestions7"></activity>
+        <activity android:name=".NextQuestions8"></activity>
     </application>
 
 </manifest>
